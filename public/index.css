@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  color:white;
+  background-color: #15171F;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+}
+html {
+  font-size: 16px;
+}
+
+.box {
+  margin:auto;
+  margin-top:40px;
+  width:40%;
+}
+.message{
+  font-size: 1.5em;
+}
+.sad {
+  width:20%;
+  font-size: 4rem;
+  margin:auto;
+}

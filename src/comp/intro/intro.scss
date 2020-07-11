@@ -1,0 +1,192 @@
+
+.intro-container {
+  padding-top: 80px;
+  width:80%;
+  margin: 0 auto;
+  
+}
+
+.intro-text-1, .intro-text-2{
+  width: fit-content;
+  margin: 5px auto;
+  font-size: 2rem;
+  visibility:hidden;
+  position: relative;
+
+}
+
+.intro-text-1 {
+  animation: fade-in 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.intro-text-2 {
+
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+}
+
+
+.button-holder {
+  width: fit-content;
+  margin: 10px auto;
+  margin-top:40px;
+}
+.go-about, .go-projects {
+  position: relative;
+  height:30px;
+  margin: 20px;
+  visibility: hidden;
+  cursor: pointer;
+
+  
+}
+.go-about {
+  animation: fly-in-bot 1.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+
+.go-projects {
+  animation: fly-in-right 1.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 7.5s;
+}
+
+.img-button {
+  height:5rem;
+  visibility:hidden;
+  cursor: pointer;
+
+  animation: fade-in-rotate 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.restart-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top:5vh;
+}
+
+.restart-:hover .img-button {
+  visibility:visible;
+}
+
+.restart-button:hover {
+  visibility:visible;
+  animation: rotate 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+.type-writer {
+  overflow: hidden;
+  font-size: 7rem;
+  font-family: monospace;
+  height: 7rem;
+  white-space: nowrap;
+  width:620px;
+  margin: 40px auto;
+  margin-top: 10vh;
+  visibility:hidden;
+  letter-spacing: 0.8rem;
+
+  animation: typing 1.4s steps(8, end), blink-caret .95s step-end infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+/* Animations  */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity:1;
+    visibility:visible;
+  }
+  50% {
+    transform: rotate(-30deg);
+    opacity:1;
+    visibility:visible;
+  }
+  100% {
+    transform: rotate(00deg);
+    opacity:1;
+    visibility:visible;
+  }
+}
+
+@keyframes fade-in-rotate {
+  0% {
+    transform: rotate(60deg);
+    opacity:0;
+    visibility:visible;
+  }
+  
+  100%{
+    transform: rotate(0deg);
+    opacity:1;
+    visibility:visible;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity:0;
+    visibility:visible;
+  }
+  100%{
+    opacity:1;
+    visibility:visible;
+  }
+}
+@keyframes fly-in-bot {
+  0% {
+    visibility:visible;
+    opacity:0;
+    top:40vh;
+  }
+  50% {
+    opacity:1;
+    top: 15vh;
+  }
+  80% {
+    top: -25px;
+  }
+  100% {
+    visibility:visible;
+    top: 0;
+  }
+}
+@keyframes fly-in-right {
+  0% {
+    visibility:visible;
+    opacity:0;
+    left:100%;
+  }
+  50% {
+    opacity:1;
+    left: 50%;
+  }
+  80% {
+    left: -33px;
+  }
+  100% {
+    visibility:visible;
+    left: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    visibility:visible;
+  }
+  to {
+    width: 620px;
+    visibility:visible;}
+}
