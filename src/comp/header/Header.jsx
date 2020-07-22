@@ -17,10 +17,13 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="logo-sec">
-          <img className="logo-dk" src={this.props.theme === "dark" ? logo_dark_theme : logo_light_theme} alt="logo" />
+        <div className="logo-sec" >
+          <a href="#intro">
+            <img className="logo-dk" src={this.props.theme === "dark" ? logo_dark_theme : logo_light_theme} alt="logo" />
+
+          </a>
         </div>
-        
+
         <div className="option-sec">
           <button className="lang-switch rem-2" onClick={this.props.langTog} > {this.props.lang.lang_switch} </button>
 

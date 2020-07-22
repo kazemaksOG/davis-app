@@ -50,9 +50,9 @@ function Intro(props) {
   }
 
   return (
-    <div className="intro full-display">
+    <div className="intro full-display-intro">
 
-      <div className="intro-container">
+      <div id="intro" className="intro-container">
         {renderAnimation()}
       </div>
 

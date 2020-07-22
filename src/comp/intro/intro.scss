@@ -5,6 +5,11 @@
   margin: 0 auto;
   
 }
+.full-display-intro {
+  height:100vh;
+  min-height: 600px;
+  width:100%;
+}
 
 .intro-text-1, .intro-text-2{
   width: fit-content;
@@ -16,14 +21,14 @@
 }
 
 .intro-text-1 {
-  animation: fade-in 1s linear;
+  animation: fade-in 1s ease;
   animation-fill-mode: forwards;
   animation-delay: 3s;
 }
 
 .intro-text-2 {
 
-  animation: fade-in 2s;
+  animation: fade-in 1s ease;
   animation-fill-mode: forwards;
   animation-delay: 4.5s;
 }
@@ -44,13 +49,13 @@
   
 }
 .go-about {
-  animation: fly-in-bot 1.5s linear;
+  animation: fly-in-bot 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 6s;
 }
 
 .go-projects {
-  animation: fly-in-right 1.5s linear;
+  animation: fly-in-right 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 7.5s;
 }
@@ -189,4 +194,267 @@
   to {
     width: 620px;
     visibility:visible;}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+  .type-writer {
+    font-size: 4rem;
+    height: 4rem;
+    width:390px;
+    margin: 40px auto;
+    margin-top: 10vh;
+    margin-bottom: 5px;
+
+
+    animation: typing-small 1.4s steps(8, end), blink-caret .95s step-end infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes typing-small {
+    from {
+      width: 0;
+      visibility:visible;
+    }
+    to {
+      width: 390px;
+      visibility:visible;}
+  }
+
+
+
+  .intro-text-1, .intro-text-2{
+    font-size: 1.5rem;
+  }
+  
+  .intro-text-1 {
+    animation: fade-in-small 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+  
+  .intro-text-2 {
+    animation: fade-in-small 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+  }
+
+  @keyframes fade-in-small {
+    0% {
+      opacity:0;
+      visibility:visible;
+    }
+    100%{
+      opacity:1;
+      visibility:visible;
+    }
+  }
+  
+  
+  .button-holder {
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 10px auto;
+    margin-top:40px;
+  }
+  .go-about, .go-projects {
+    position: relative;
+    height:fit-content;
+    margin: 10px;
+    visibility: hidden;
+    cursor: pointer;
+  
+    
+  }
+  .go-about {
+    animation: fly-in-bot-small-1 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+  }
+  
+  .go-projects {
+    animation: fly-in-bot-small-2 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+  }
+  
+  @keyframes fly-in-bot-small-1 {
+    0% {
+      visibility:visible;
+      opacity:0;
+      top:40vh;
+    }
+    50% {
+      opacity:1;
+      top: 15vh;
+    }
+    80% {
+      top: -25px;
+    }
+    100% {
+      visibility:visible;
+      top: 0;
+    }
+  }
+
+  @keyframes fly-in-bot-small-2 {
+    0% {
+      visibility:visible;
+      opacity:0;
+      top:40vh;
+    }
+    50% {
+      opacity:1;
+      top: 15vh;
+    }
+    80% {
+      top: -25px;
+    }
+    100% {
+      visibility:visible;
+      top: 0;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) { 
+  .type-writer {
+    font-size: 2rem;
+    height: 2rem;
+    width:240px;
+    margin: 40px auto;
+    margin-top: 10vh;
+    margin-bottom: 20px;
+
+
+    animation: typing-smaller 1.4s steps(8, end), blink-caret .95s step-end infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes typing-smaller {
+    from {
+      width: 0;
+      visibility:visible;
+    }
+    to {
+      width: 240px;
+      visibility:visible;}
+  }
+
+
+
+  .intro-text-1, .intro-text-2{
+    font-size: 1.1rem;
+  
+  }
+  
+  .intro-text-1 {
+    animation: fade-in-smaller 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+  
+  .intro-text-2 {
+    animation: fade-in-smaller 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+  }
+
+  @keyframes fade-in-smaller {
+    0% {
+      opacity:0;
+      visibility:visible;
+    }
+    100%{
+      opacity:1;
+      visibility:visible;
+    }
+  }
+  
+  .button-holder {
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 10px auto;
+    margin-top:40px;
+  }
+  .go-about, .go-projects {
+    position: relative;
+    height:fit-content;
+    margin: 10px;
+    font-size: 0.85rem;
+    padding:10px 20px !important;
+    visibility: hidden;
+    cursor: pointer;
+  
+    
+  }
+  .go-about {
+    animation: fly-in-bot-smaller-1 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+  }
+  
+  .go-projects {
+    animation: fly-in-bot-smaller-2 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+  }
+  
+  @keyframes fly-in-bot-smaller-1 {
+    0% {
+      visibility:visible;
+      opacity:0;
+      top:40vh;
+    }
+    50% {
+      opacity:1;
+      top: 15vh;
+    }
+    80% {
+      top: -25px;
+    }
+    100% {
+      visibility:visible;
+      top: 0;
+    }
+  }
+
+  @keyframes fly-in-bot-smaller-2 {
+    0% {
+      visibility:visible;
+      opacity:0;
+      top:40vh;
+    }
+    50% {
+      opacity:1;
+      top: 15vh;
+    }
+    80% {
+      top: -25px;
+    }
+    100% {
+      visibility:visible;
+      top: 0;
+    }
+  }
+  
+
 }

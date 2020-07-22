@@ -5,12 +5,16 @@ export const dark = {
   header: '#1F222F',
   button: 'white',
   button_hover: 'black',
+  grid_item: '#242837',
+  shadow: 'none',
 }
 
 export const light = {
   color: 'black',
   background: '#FFFFFF',
-  header: '#E7E8EC',
+  header: '#CFD1D9',
   button: '#15171F',
   button_hover: 'white',
+  grid_item: '#E7E8EC',
+  shadow: '5px 5px 5px #ccc;',
 }

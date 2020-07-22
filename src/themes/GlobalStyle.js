@@ -35,16 +35,25 @@ export const GlobalStyles = createGlobalStyle`
     border-radius: 15px;
     border: 0.1rem solid ${({ theme }) => theme.button};
     background: ${({ theme }) => theme.background};
-
+    
   }
   .default-button:hover {
-    transition: all 0.5s linear;
+
     background-color: ${({ theme }) => theme.button};
     color: ${({ theme }) => theme.button_hover};
 
     
   }
   
+  .grid-item {
+  
+    background-color: ${({ theme }) => theme.grid_item};
+    box-shadow: ${({ theme }) => theme.shadow};
+    -moz-box-shadow: ${({ theme }) => theme.shadow};
+    -webkit-box-shadow: ${({ theme }) => theme.shadow};
+    transition: background 0.5s linear, box-shadow 0.5s linear;
+
+  }
 
   .type-writer {
     border-right: .3rem solid ${({ theme }) => theme.color};

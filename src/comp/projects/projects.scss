@@ -4,3 +4,46 @@
   margin: 0 auto;
   
 }
+.project-wrapper {
+  position: relative;
+  width:40em;
+}
+
+.proj-description, .proj-headline {
+  position:absolute;
+}
+
+.proj-headline {
+  font-family: monospace;
+  color: black;
+  font-weight: bold;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top:1em;
+  width: fit-content; 
+}
+
+.proj-description {
+  color:white;
+  left: 0; 
+  right: 0; 
+  padding: 2em 2em;
+ 
+  background:#15171F;
+  opacity: 0.87;
+  top:70%;
+  height:30%;
+
+}
+
+.proj-image {
+  width:100%;
+}
+
+.projects-headline {
+  margin-top:0.5em;
+  margin-bottom:1em;
+}
+
