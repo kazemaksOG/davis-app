@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-add-space": "^1.0.7",
     "react-dom": "^16.13.1",
     "react-elastic-carousel": "^0.6.7",
     "react-scripts": "3.4.1",
@@ -35,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
     "eslint-plugin-react": "^7.20.3"
   }
 }

@@ -199,9 +199,38 @@
 
 
 
+.custom-shape-divider-top-1595507966 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1595507966 svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-top-1595507966 .shape-fill {
+  fill: #ffffff;
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 720px) {
+  .img-button {
+    height:4rem;
+  }
+
+
   .type-writer {
     font-size: 4rem;
     height: 4rem;
@@ -334,6 +363,13 @@
 
 
 @media only screen and (max-width: 500px) { 
+  .img-button {
+    height:2rem;
+  }
+  .intro-container {
+    width:90%;
+  }
+
   .type-writer {
     font-size: 2rem;
     height: 2rem;

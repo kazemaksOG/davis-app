@@ -36,3 +36,32 @@
 
 
 }
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 60px;
+    .logo-sec {
+      width:30%;
+      height:100%;
+  
+      .logo-dk {
+        padding:10px;
+        height:40px;
+        cursor: pointer;
+      }
+  
+    }
+  
+    .option-sec {
+      .light-switch {
+        height:70%;
+        margin: auto 15px;
+      }
+      .lang-switch {
+        font-size:1.5rem;
+        padding: 0 20px;
+      }
+    }
+  
+}
+}

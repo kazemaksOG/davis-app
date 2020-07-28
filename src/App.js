@@ -23,7 +23,7 @@ const en = {
 };
 
 const nl = {
-  welcome: '⠀Welkom.',
+  welcome: "Welkom.",
   lang_switch:'en',
   my_name: 'My name is Dāvis Kažemaks',
   this_is: 'And this is my website',

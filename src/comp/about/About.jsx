@@ -51,7 +51,7 @@ class About extends Component {
                 Experience
               </div>
               <div className="about-grid-text">
-                I received an internship as a web developer for 2 months in Emergn which was provided by the SpaceTEM program. I spent my days learning and using Javascript, CSS, React, Nodejs, Git, and many other tools for creating websites. By the end of the internship, I had improved my understanding on web development and refined my work ethic.
+                I received an internship as a web developer in Emergn which was provided by the SpaceTEM program. I spent my days learning and using Javascript, CSS, React, Nodejs, Git, and many other tools for creating websites. By the end of the internship, I had improved my understanding on web development and refined my work ethic.
               </div>
             </div>
 

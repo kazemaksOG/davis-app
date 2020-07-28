@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import Spacer from 'react-add-space';
+
 import './intro.scss';
 import light_theme_replay from '../../assets/black_replay.png';
 import dark_theme_replay from '../../assets/white_replay.png';
@@ -18,7 +20,7 @@ function Intro(props) {
           </div>
 
           <div className="type-writer">
-            {props.lang.welcome}
+          {props.lang.welcome == "Welcome." ? "": <Spacer amount={1} /> }{props.lang.welcome}
           </div>
 
           <div className="intro-text-1">
@@ -51,12 +53,15 @@ function Intro(props) {
 
   return (
     <div className="intro full-display-intro">
-
       <div id="intro" className="intro-container">
         {renderAnimation()}
       </div>
 
     </div>
+
+
+
+
   );
 }
 

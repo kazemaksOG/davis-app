@@ -26,13 +26,16 @@
 }
 
 .proj-description {
-  color:white;
+  color:black;
   left: 0; 
   right: 0; 
   padding: 2em 2em;
  
-  background:#15171F;
+  backdrop-filter: blur(10px);  // not supported on many devices
+/* before was this background:#15171F; 
   opacity: 0.87;
+  */
+
   top:70%;
   height:30%;
 
