@@ -16,5 +16,5 @@ export const light = {
   button: '#15171F',
   button_hover: 'white',
   grid_item: '#E7E8EC',
-  shadow: '5px 5px 5px #ccc;',
+  shadow: '8px 8px 15px #ccc;',
 }
