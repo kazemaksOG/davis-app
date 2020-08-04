@@ -1,3 +1,4 @@
+/* defaults */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
@@ -16,7 +17,14 @@ code {
     monospace;
 }
 
-/* defaults */
+/* tools */
+
+.center-box {
+  margin: 0 auto;
+  width: fit-content;
+  display: block;
+}
+
 .rem-075 {
   font-size:0.75rem;
 }
@@ -50,10 +58,7 @@ code {
 .mrg-20 {
   margin:20px;
 }
-.center-box {
-  max-width:1260px;
-  margin: 0 auto;
-}
+
 
 .width-100{
   width:100%;
@@ -69,8 +74,12 @@ code {
 
 
 
-.test {
+.mrg-top-100 {
   margin-top:100px;
+}
+
+.mrg-top-20 {
+  margin-top:20px;
 }
 
 .headline-big {
@@ -90,6 +99,12 @@ code {
 @media only screen and (min-width: 1300px) {
   .full-display {
     height:100vh;
+    min-height: 600px;
+    width:100%;
+  }
+
+  .full-display-projects {
+    height:90vh;
     min-height: 600px;
     width:100%;
   }

@@ -7,6 +7,7 @@ export const dark = {
   button_hover: 'black',
   grid_item: '#242837',
   shadow: 'none',
+  project_background: '#292d3e',
 }
 
 export const light = {
@@ -17,4 +18,5 @@ export const light = {
   button_hover: 'white',
   grid_item: '#E7E8EC',
   shadow: '8px 8px 15px #ccc;',
+  project_background:'#E7E8EC',
 }

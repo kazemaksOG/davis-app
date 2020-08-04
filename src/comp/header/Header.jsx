@@ -6,21 +6,16 @@ import logo_light_theme from '../../assets/black_dk_logo.svg';
 import switch_dark_theme from '../../assets/white_switch.svg';
 import switch_light_theme from '../../assets/black_switch.svg'
 
+
+
 class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-    };
-  }
-
-
   render() {
+
     return (
       <div className="header">
         <div className="logo-sec" >
           <a href="#intro">
             <img className="logo-dk" src={this.props.theme === "dark" ? logo_dark_theme : logo_light_theme} alt="logo" />
-
           </a>
         </div>
 

@@ -1,48 +1,54 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+
 .projects-container {
   padding-top: 80px;
   width:80%;
   margin: 0 auto;
   
 }
-.project-wrapper {
-  position: relative;
-  width:40em;
+
+.alice-carousel__wrapper {
+  padding:15px 10px;
 }
 
-.proj-description, .proj-headline {
-  position:absolute;
+.project-wrapper {
+  width:90%;
+  height:530px;
+  padding-top:20px;
+  margin: 0 20px;
+  border-radius: 1em;
 }
 
 .proj-headline {
-  font-family: monospace;
-  color: black;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
   font-weight: bold;
-  left: 0; 
-  right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  top:1em;
-  width: fit-content; 
+  width: 90%;
+  text-align: center;
+  height:10%;
 }
 
 .proj-description {
-  color:black;
-  left: 0; 
-  right: 0; 
-  padding: 2em 2em;
- 
-  backdrop-filter: blur(10px);  // not supported on many devices
-/* before was this background:#15171F; 
-  opacity: 0.87;
-  */
+  display:block;
+  width:60%;
+  font-size: 1.2rem;
 
-  top:70%;
-  height:30%;
-
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .proj-image {
   width:100%;
+}
+.proj-image-holder {
+  display:block;
+  width:60%;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 20px;
 }
 
 .projects-headline {
@@ -50,3 +56,44 @@
   margin-bottom:1em;
 }
 
+
+@media only screen and (max-width: 560px) {
+
+  .proj-headline {
+    width: 90%;
+    height:15%;
+  }
+  
+  .proj-description {
+    width:80%;
+    font-size: 1.2rem;
+  
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .proj-image-holder {
+    width:70%;
+  }
+  
+}
+
+@media only screen and (max-width: 460px) {
+  .projects-container {
+    padding-top: 80px;
+    width:90%;
+    margin: 0 auto;
+    
+  }
+
+  .proj-headline {
+   font-size:1.75rem;
+  }
+  
+  .proj-description {
+    font-size: 1.1rem;
+
+  }
+  
+
+}
