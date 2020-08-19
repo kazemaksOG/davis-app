@@ -15,8 +15,8 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
-        <a target="_blank" href="https://github.com/kazemaksOG">
-          <img className="" src={this.props.theme == "dark" ? whiteGit : blackGit} alt="default" />
+        <a className="link-git" target="_blank" href="https://github.com/kazemaksOG">
+          <img className="git-img" src={this.props.theme == "dark" ? whiteGit : blackGit} alt="default" />
         </a>
       </div>
     );

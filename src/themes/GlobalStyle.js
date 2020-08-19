@@ -46,6 +46,10 @@ export const GlobalStyles = createGlobalStyle`
     .default-button {
       transition: background 0s ease;
     }
+
+    .default-button:hover {
+      transition: background 0.5s ease;
+    }
   }
 
   .default-button {

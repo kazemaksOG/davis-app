@@ -21,6 +21,13 @@ const en = {
   this_is: 'And this is my website',
   about: 'About me',
   projects: 'Projects',
+  check: 'Check out',
+  personal: 'Personal information',
+  personal_text: 'My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
+  edu: 'Education',
+  exp: 'Experience',
+  website:'This Website',
+  spaceship:'AI Spaceship Race',
 
 
 };
@@ -28,25 +35,50 @@ const en = {
 const nl = {
   welcome: "Welkom.",
   lang_switch:'en',
-  my_name: 'My name is Dāvis Kažemaks',
-  this_is: 'And this is my website',
-  about: 'About me',
-  projects: 'Projects',
-
+  my_name: 'Mijn naam is Dāvis Kažemaks',
+  this_is: 'En dit is mijn website',
+  about: 'Over mij',
+  projects: 'Projecten',
+  check: 'Uitchecken',
+  personal: 'Persoonlijke informatie',
+  personal_text: '(Sorry my dutch is not that great yet) My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
+  edu: 'Opleiding',
+  exp: 'Ervaring',
+  website:'Deze Website',
+  spaceship:'KI Ruimteschip Race',
 
 };
 
 
 function App() {
+  let defTheme = 'dark';
+  let defLang = 'en';
 
-  const [theme, setTheme] = useState('dark');
+  sessionStorage.getItem('davisTheme') == 'light' ? defTheme = 'light' : defTheme = 'dark';
+  const [theme, setTheme] = useState(defTheme);
   const themeTog = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
+    if(theme === 'light') {
+      setTheme('dark');
+      sessionStorage.setItem('davisTheme','dark')
+    } else {
+      setTheme('light');
+      sessionStorage.setItem('davisTheme','light');
+    }
+
+    
   }
 
-  const [lang, setLang] = useState('en');
+  sessionStorage.getItem('davisLang') == 'nl' ? defLang = 'nl' : defLang = 'en';
+  const [lang, setLang] = useState(defLang);
   const langTog = () => {
-    lang === 'en' ? setLang('nl') : setLang('en');
+
+    if(lang === 'en') {
+      setLang('nl');
+      sessionStorage.setItem('davisLang','nl')
+    } else {
+      setLang('en');
+      sessionStorage.setItem('davisLang','en');
+    }
   }
 
   return (
