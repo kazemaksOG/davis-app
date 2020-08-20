@@ -41,7 +41,7 @@ const nl = {
   projects: 'Projecten',
   check: 'Uitchecken',
   personal: 'Persoonlijke informatie',
-  personal_text: '(Sorry my dutch is not that great yet) My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
+  personal_text: '(Sorry my Dutch is not that great yet) My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
   edu: 'Opleiding',
   exp: 'Ervaring',
   website:'Deze Website',
