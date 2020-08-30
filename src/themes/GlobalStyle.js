@@ -56,7 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration:none;
     padding:15px 30px;
     border-radius: 15px;
-    border: 0.1rem solid ${({ theme }) => theme.button};
+    border: 2px solid ${({ theme }) => theme.button};
     background: inherit;
     transition: background 0.5s ease;
     transition-delay: 0s;

@@ -39,7 +39,7 @@ function Projects(props) {
               <img className="proj-image" src={gameImage} alt="default" />
             </div>
             <div className="proj-description">
-              A side-scroller minigame in which the player tries to beat a pre-trained AI. The AI was trained using the magic of <a target="_blank" href="https://en.wikipedia.org/wiki/Neuroevolution">Neuroevolution</a>.
+              A side-scroller minigame in which the player tries to beat a pre-trained AI. The AI was trained using the magic of <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Neuroevolution">Neuroevolution</a>.
               </div>
             <Link to="/game" className="default-button center-box mrg-top-20"> {props.lang.check} </Link>
           </div>
