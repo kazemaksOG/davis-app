@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import './about.scss';
+
+// Assets
 import personal from '../../assets/personal.jpg';
 
 function About(props) {
@@ -53,6 +55,10 @@ function About(props) {
       </div>
     </div>
   );
+}
+
+About.propTypes = {
+  lang: PropTypes.string.isRequired,
 }
 
 export default About;

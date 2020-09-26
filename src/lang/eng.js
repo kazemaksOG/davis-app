@@ -1,0 +1,15 @@
+export default {
+  welcome: 'Welcome.',
+  lang_switch:'nl',
+  my_name: 'My name is Dāvis Kažemaks',
+  this_is: 'And this is my website',
+  about: 'About me',
+  projects: 'Projects',
+  check: 'Check out',
+  personal: 'Personal information',
+  personal_text: 'My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
+  edu: 'Education',
+  exp: 'Experience',
+  website:'This Website',
+  spaceship:'AI Spaceship Race',
+}

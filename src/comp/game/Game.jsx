@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 class Game extends Component {
 
   componentDidMount() {
-
+    window.scrollTo(0, 0)
   }
 
   render() {
     return (
-      <div className="mrg-top-100">
-        <iframe width="95%" height="800px" frameBorder="0" src="https://jsgame-e56ba.web.app/" >
+      <div className="mrg-top-70">
+        <iframe width="95%" height="750px" frameBorder="0" src="https://jsgame-e56ba.web.app/" >
           Browser or device not compatible (try google chrome)
         </iframe>
+
         <Link to="/" className="center-box default-button">
         Take me back
-      </Link>
+        </Link>
       </div>
     );
   }

@@ -49,16 +49,24 @@ code {
 .mrg-10 {
   margin:10px;
 }
-.mrg-bottom-10 {
-  margin-bottom: 10px;
+.mrg-20 {
+  margin:20px;
 }
 .mrg-top-10 {
   margin-top: 10px;
 }
-.mrg-20 {
-  margin:20px;
+.mrg-top-70 {
+  margin-top: 70px;
 }
-
+.mrg-top-100 {
+  margin-top:100px;
+}
+.mrg-top-20 {
+  margin-top:20px;
+}
+.mrg-bottom-10 {
+  margin-bottom: 10px;
+}
 
 .width-100{
   width:100%;
@@ -72,15 +80,6 @@ code {
   flex-direction: column;
 }
 
-
-
-.mrg-top-100 {
-  margin-top:100px;
-}
-
-.mrg-top-20 {
-  margin-top:20px;
-}
 
 .headline-big {
   font-size:3rem;

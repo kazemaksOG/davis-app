@@ -2,11 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
+// Theme controller
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './themes/GlobalStyle';
 import { light, dark } from './themes/Themes';
 
+// Language
+import en from './lang/eng';
+import nl from './lang/nl';
 
+// Render components
 import Header from './comp/header/Header';
 import Intro from './comp/intro/Intro';
 import About from './comp/about/About';
@@ -14,48 +19,22 @@ import Footer from './comp/footer/Footer';
 import Projects from './comp/projects/Projects';
 import Game from './comp/game/Game';
 
-const en = {
-  welcome: 'Welcome.',
-  lang_switch:'nl',
-  my_name: 'My name is Dāvis Kažemaks',
-  this_is: 'And this is my website',
-  about: 'About me',
-  projects: 'Projects',
-  check: 'Check out',
-  personal: 'Personal information',
-  personal_text: 'My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
-  edu: 'Education',
-  exp: 'Experience',
-  website:'This Website',
-  spaceship:'AI Spaceship Race',
-
-
-};
-
-const nl = {
-  welcome: "Welkom.",
-  lang_switch:'en',
-  my_name: 'Mijn naam is Dāvis Kažemaks',
-  this_is: 'En dit is mijn website',
-  about: 'Over mij',
-  projects: 'Projecten',
-  check: 'Uitchecken',
-  personal: 'Persoonlijke informatie',
-  personal_text: '(Sorry my Dutch is not that great yet) My name is Dāvis Kažemaks. I am from Latvia and at the time of making this I’m 19 years old. I have been a problem solver since primary school and I believe that software engineering is my next step in my problem-solving journey.',
-  edu: 'Opleiding',
-  exp: 'Ervaring',
-  website:'Deze Website',
-  spaceship:'KI Ruimteschip Race',
-
-};
 
 
 function App() {
+
+  // Theme and lang variables
   let defTheme = 'dark';
   let defLang = 'en';
 
+  // Checks users defaults
   sessionStorage.getItem('davisTheme') == 'light' ? defTheme = 'light' : defTheme = 'dark';
   const [theme, setTheme] = useState(defTheme);
+
+  sessionStorage.getItem('davisLang') == 'nl' ? defLang = 'nl' : defLang = 'en';
+  const [lang, setLang] = useState(defLang);
+
+  // Change theme and lang function
   const themeTog = () => {
     if(theme === 'light') {
       setTheme('dark');
@@ -64,14 +43,9 @@ function App() {
       setTheme('light');
       sessionStorage.setItem('davisTheme','light');
     }
-
-    
   }
 
-  sessionStorage.getItem('davisLang') == 'nl' ? defLang = 'nl' : defLang = 'en';
-  const [lang, setLang] = useState(defLang);
   const langTog = () => {
-
     if(lang === 'en') {
       setLang('nl');
       sessionStorage.setItem('davisLang','nl')
@@ -81,12 +55,11 @@ function App() {
     }
   }
 
+
   return (
     <ThemeProvider theme={theme === 'light' ? light : dark} >
       <GlobalStyles />
       <Router>
-
-
       <Header theme={theme} themeTog={themeTog} lang={lang === 'en' ? en : nl} langTog={langTog} />
           
         <Switch>
@@ -104,8 +77,6 @@ function App() {
         </Switch>
 
       <Footer theme={theme} />
-
-
       </Router>
     </ThemeProvider>
 

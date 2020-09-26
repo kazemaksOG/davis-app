@@ -51,7 +51,7 @@ function Projects(props) {
               <img className="proj-image" src={websiteImage} alt="default" />
             </div>
             <div className="proj-description">
-              A website I created to showcase my programming capabilities. The web-app is based on React.js library and many more dependencies under the MIT license.
+              A website I created to showcase my programming capabilities. The web-app is based on React.js library and many more dependencies under the MIT license. The website is also responsive, try resizing it!
               </div>
           </div>
 
