@@ -1,7 +1,7 @@
 
 ## My personal website
 
-A website I created to showcase my programming capabilities.
+A responsive website I created to showcase my programming capabilities.
 
 ### Materials used
 
