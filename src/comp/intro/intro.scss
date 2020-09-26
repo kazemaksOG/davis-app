@@ -87,8 +87,6 @@
   animation-fill-mode: forwards;
 }
 
-
-
 .type-writer {
   overflow: hidden;
   font-size: 7rem;
@@ -106,7 +104,7 @@
   animation-delay: 1s;
 }
 
-/* Animations  */
+/********************* Animations  **********************/
 
 @keyframes rotate {
   0% {
@@ -198,33 +196,7 @@
 }
 
 
-
-
-.custom-shape-divider-top-1595507966 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1595507966 svg {
-  position: relative;
-  display: block;
-  width: calc(147% + 1.3px);
-  height: 110px;
-}
-
-.custom-shape-divider-top-1595507966 .shape-fill {
-  fill: #ffffff;
-}
-
-
-
-
-
-
+/********************* Media queries *********************/
 
 @media only screen and (max-width: 720px) {
   .img-button {
@@ -354,15 +326,6 @@
   
 }
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 500px) { 
   .img-button {
     height:2rem;
@@ -394,8 +357,6 @@
       width: 240px;
       visibility:visible;}
   }
-
-
 
   .intro-text-1, .intro-text-2{
     font-size: 1.1rem;

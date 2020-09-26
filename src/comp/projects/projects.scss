@@ -1,11 +1,9 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
-
 .projects-container {
   padding-top: 80px;
   width:80%;
   margin: 0 auto;
-  
 }
 
 .alice-carousel__wrapper {
@@ -43,6 +41,7 @@
 .proj-image {
   width:100%;
 }
+
 .proj-image-holder {
   display:block;
   width:60%;
@@ -56,7 +55,7 @@
   margin-bottom:0.2em;
 }
 
-
+/**************** Media queries *********************/
 @media only screen and (max-width: 560px) {
 
   .proj-headline {
@@ -67,7 +66,6 @@
   .proj-description {
     width:80%;
     font-size: 1.2rem;
-  
     margin-left: auto; 
     margin-right: auto; 
   }
@@ -83,7 +81,6 @@
     padding-top: 80px;
     width:90%;
     margin: 0 auto;
-    
   }
 
   .proj-headline {
@@ -92,8 +89,5 @@
   
   .proj-description {
     font-size: 1.1rem;
-
   }
-  
-
 }

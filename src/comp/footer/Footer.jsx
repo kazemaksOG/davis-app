@@ -10,18 +10,40 @@ import blackFacebook from '../../assets/black_facebook.png';
 
 
 function Footer(props) {
-    return (
-      <div className="footer-container">
-        <a className="link-git" rel="noopener noreferrer" target="_blank" href="https://github.com/kazemaksOG">
-          <img className="git-img" src={props.theme == "dark" ? whiteGit : blackGit} alt="default" />
-        </a>
-
-        <a className="link-git" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/davis.kazemaks">
-          <img className="git-img" src={props.theme == "dark" ? whiteFacebook : blackFacebook} alt="default" />
-        </a>
-      </div>
-    );
+  return (
+    <div className="footer-container">
+      {renderIcons(props)}
+    </div>
+  );
   }
+
+
+// Renders the icons
+const renderIcons = (props) => {
+  return(
+    mappingInfo.map((item) => (
+      <a key={item.id} className="link-git" rel="noopener noreferrer" target="_blank" href={item.link}>
+        <img className="git-img" src={props.theme == "dark" ? item.white : item.black} alt="default" />
+      </a>
+    ))
+  )
+}
+
+const mappingInfo = [
+  {
+    id: "git",
+    white: whiteGit,
+    black: blackGit,
+    link: 'https://github.com/kazemaksOG',
+  },
+  {
+    id: "facebook",
+    white: whiteFacebook,
+    black: blackFacebook,
+    link: 'https://www.facebook.com/davis.kazemaks',
+  }
+];
+  
 
 // Prop types
 Footer.propTypes = {

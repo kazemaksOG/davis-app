@@ -55,7 +55,6 @@ function App() {
     }
   }
 
-
   return (
     <ThemeProvider theme={theme === 'light' ? light : dark} >
       <GlobalStyles />
@@ -82,8 +81,6 @@ function App() {
 
   );
 }
-
-
 
 const notFound = () => {
   return(

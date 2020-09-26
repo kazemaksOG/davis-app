@@ -94,7 +94,7 @@ code {
 }
 
 
-
+/* Full display code */
 @media only screen and (min-width: 1300px) {
   .full-display {
     height:100vh;

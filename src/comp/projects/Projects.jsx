@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from 'react-alice-carousel';
 import { Link } from 'react-router-dom';
-
+import PropTypes from 'prop-types'
 import './projects.scss';
+
+// Assets
 import gameImage from '../../assets/game_cover.png';
 import websiteImage from '../../assets/website_cover.png';
 
+
 function Projects(props) {
+
+  // Properties for the carousel
   const responsive = {
     0: {
       items: 1,
@@ -15,9 +20,8 @@ function Projects(props) {
       items: 2
     }
   }
-
   const padding = {
-    paddingLeft: 0,     // in pixels
+    paddingLeft: 0,
     paddingRight: 0
   }
 
@@ -27,6 +31,7 @@ function Projects(props) {
         <div className="projects-headline headline-big">
           {props.lang.projects}
         </div>
+
         <Carousel
           responsive={responsive}
           stagePadding={padding}
@@ -34,24 +39,28 @@ function Projects(props) {
         >
           <div className="project-wrapper" >
             <div className="headline-med proj-headline"> {props.lang.spaceship}</div>
-            <div className="proj-image-holder">
 
+            <div className="proj-image-holder">
               <img className="proj-image" src={gameImage} alt="default" />
             </div>
+      
             <div className="proj-description">
-              A side-scroller minigame in which the player tries to beat a pre-trained AI. The AI was trained using the magic of <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Neuroevolution">Neuroevolution</a>.
-              </div>
+              A side-scroller minigame in which the player tries to beat a pre-trained AI. The AI was trained using the magic of <a rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Neuroevolution">Neuroevolution</a>.
+            </div>
+
             <Link to="/game" className="default-button center-box mrg-top-20"> {props.lang.check} </Link>
           </div>
 
+
           <div className="project-wrapper" >
             <div className="headline-med proj-headline"> {props.lang.website}</div>
-            <div className="proj-image-holder">
 
+            <div className="proj-image-holder">
               <img className="proj-image" src={websiteImage} alt="default" />
             </div>
+            
             <div className="proj-description">
-              A website I created to showcase my programming capabilities. The web-app is based on React.js library and many more dependencies under the MIT license. The website is also responsive, try resizing it!
+              {props.lang.website_text}
               </div>
           </div>
 
@@ -61,5 +70,8 @@ function Projects(props) {
   );
 }
 
+Projects.propTypes = {
+  lang: PropTypes.string.isRequired,
+}
 
 export default Projects;
