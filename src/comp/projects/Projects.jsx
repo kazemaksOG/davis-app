@@ -7,7 +7,7 @@ import './projects.scss';
 // Assets
 import gameImage from '../../assets/game_cover.png';
 import websiteImage from '../../assets/website_cover.png';
-
+import chessImage from '../../assets/chess.png';
 
 function Projects(props) {
 
@@ -62,6 +62,21 @@ function Projects(props) {
             <div className="proj-description">
               {props.lang.website_text}
               </div>
+          </div>
+
+          <div className="project-wrapper" >
+            <div className="headline-med proj-headline"> {props.lang.chess}</div>
+
+            <div className="proj-image-holder">
+              <img className="proj-image" src={chessImage} alt="default" />
+            </div>
+            
+            <div className="proj-description">
+              {props.lang.chess_text}
+            </div>
+
+            <a href="https://bruh-chess.herokuapp.com/" target="_blank" rel="noreferrer" className="default-button center-box mrg-top-20"> {props.lang.check} </a>
+
           </div>
 
         </Carousel>

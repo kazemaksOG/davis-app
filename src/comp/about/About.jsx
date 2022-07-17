@@ -21,11 +21,11 @@ function About(props) {
 
             <div className="about-picture-text">
               <div className="about-grid-headline headline-med edu-headline">
-                {props.lang.edu}
+                {props.lang.personal}
               </div>
 
               <div className="about-grid-text">
-              {props.lang.edu_text}
+              {props.lang.personal_text}
               </div>
             </div>
           </div>
@@ -44,11 +44,11 @@ function About(props) {
 
           <div className="grid-item-experience grid-item">
             <div className="about-grid-headline headline-med personal-headline">
-              {props.lang.personal}
+              {props.lang.edu}
             </div>
 
             <div className="about-grid-text">
-              {props.lang.personal_text}
+              {props.lang.edu_text}
             </div>
           </div>
         </div>
