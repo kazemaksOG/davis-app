@@ -1,19 +1,17 @@
 /* defaults */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 html {
   scroll-behavior: smooth;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -26,31 +24,31 @@ code {
 }
 
 .rem-075 {
-  font-size:0.75rem;
+  font-size: 0.75rem;
 }
 .rem-125 {
-  font-size:1.25rem;
+  font-size: 1.25rem;
 }
 .rem-15 {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 .rem-175 {
-  font-size:1.75rem;
+  font-size: 1.75rem;
 }
-.rem-2{
-  font-size:2rem;
+.rem-2 {
+  font-size: 2rem;
 }
 .rem-225 {
-  font-size:2.25rem;
+  font-size: 2.25rem;
 }
 .rem-25 {
-  font-size:2.5rem;
+  font-size: 2.5rem;
 }
 .mrg-10 {
-  margin:10px;
+  margin: 10px;
 }
 .mrg-20 {
-  margin:20px;
+  margin: 20px;
 }
 .mrg-top-10 {
   margin-top: 10px;
@@ -59,17 +57,17 @@ code {
   margin-top: 70px;
 }
 .mrg-top-100 {
-  margin-top:100px;
+  margin-top: 100px;
 }
 .mrg-top-20 {
-  margin-top:20px;
+  margin-top: 20px;
 }
 .mrg-bottom-10 {
   margin-bottom: 10px;
 }
 
-.width-100{
-  width:100%;
+.width-100 {
+  width: 100%;
 }
 .flex-row {
   display: flex;
@@ -80,31 +78,29 @@ code {
   flex-direction: column;
 }
 
-
 .headline-big {
-  font-size:3rem;
+  font-size: 3rem;
   margin: 0 auto;
-  width:fit-content;
+  width: fit-content;
 }
 
 .headline-med {
-  font-size:2rem;
+  font-size: 2rem;
   margin: 0 auto;
-  width:fit-content;
+  width: fit-content;
 }
-
 
 /* Full display code */
 @media only screen and (min-width: 1300px) {
   .full-display {
-    height:100vh;
+    height: 100vh;
     min-height: 600px;
-    width:100%;
+    width: 100%;
   }
 
   .full-display-projects {
-    min-height:90vh;
+    min-height: 90vh;
     min-height: 600px;
-    width:100%;
+    width: 100%;
   }
 }

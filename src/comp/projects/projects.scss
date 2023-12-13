@@ -2,91 +2,89 @@
 
 .projects-container {
   padding-top: 80px;
-  width:80%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .alice-carousel__wrapper {
-  padding:15px 10px;
+  padding: 15px 10px;
 }
 
 .project-wrapper {
-  width:90%;
-  min-height:500px;
-  padding-top:20px;
+  width: 90%;
+  min-height: 500px;
+  padding-top: 20px;
   margin: 0 20px;
   border-radius: 1em;
 }
 
 .proj-headline {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   font-weight: bold;
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   text-align: center;
-  height:10%;
+  height: 10%;
 }
 
 .proj-description {
-  display:block;
-  width:60%;
+  display: block;
+  width: 60%;
   font-size: 1.2rem;
 
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .proj-image {
-  width:100%;
+  width: 100%;
 }
 
 .proj-image-holder {
-  display:block;
-  width:60%;
-  margin-left: auto; 
-  margin-right: auto; 
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 
 .projects-headline {
-  margin-top:0.5em;
-  margin-bottom:0.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 /**************** Media queries *********************/
 @media only screen and (max-width: 560px) {
-
   .proj-headline {
     width: 90%;
-    height:15%;
+    height: 15%;
   }
-  
+
   .proj-description {
-    width:80%;
+    width: 80%;
     font-size: 1.2rem;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .proj-image-holder {
-    width:70%;
+    width: 70%;
   }
-  
 }
 
 @media only screen and (max-width: 460px) {
   .projects-container {
     padding-top: 80px;
-    width:90%;
+    width: 90%;
     margin: 0 auto;
   }
 
   .proj-headline {
-   font-size:1.75rem;
+    font-size: 1.75rem;
   }
-  
+
   .proj-description {
     font-size: 1.1rem;
   }

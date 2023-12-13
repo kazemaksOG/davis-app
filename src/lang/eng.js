@@ -1,13 +1,12 @@
 // Assets
-import gameImage from '../assets/game_cover.png';
-import websiteImage from '../assets/website_cover.png';
-import chessImage from '../assets/chess.png';
-import lunarImage from '../assets/lunar.jpg'
-import cleaningImage from '../assets/cleaning_robot.jpg'
-import videowindowImage from '../assets/videowindow.png'
+import gameImage from "../assets/game_cover.png";
+import websiteImage from "../assets/website_cover.png";
+import chessImage from "../assets/chess.png";
+import lunarImage from "../assets/lunar.jpg";
+import cleaningImage from "../assets/cleaning_robot.jpg";
+import videowindowImage from "../assets/videowindow.png";
 
 export default {
-
   project_array: [
     {
       title: "High-voltage cleaning robot",
@@ -63,21 +62,21 @@ export default {
       link_text: "",
       link: "",
     },
-
   ],
-  welcome: 'Welcome.',
-  lang_switch:'lv',
-  my_name: 'My name is Dāvis Kažemaks',
-  this_is: 'And this is my website',
-  about: 'About me',
-  projects: 'Projects',
-  check: 'Check out',
-  personal: 'Personal information',
-  personal_text: 'My name is Dāvis Kažemaks. I am from Latvia but currently residing in Delft, Netherlands. I have always enjoyed tinkering with computers and making projects that solve a problem or improve experience for me and people around me.',
-  edu: 'Education',
-  edu_text: 'I am currently pursuing a master\'s in Computer and Embedded Systems Engineering at Delft University of Technology. At TU Delft, I also obtained my Bachelor in Computer Science and graduated with Honors and Cum Laude. During my studies, I learned software engineering principles, testing, databases and too many programming languages.',
-  exp: 'Experience',
-  exp_text:'I received an internship as a Full Stack Developer in Emergn which was provided by the SpaceTEM program. I spent my days learning and using Javascript, CSS, React, Nodejs, Git, and many other tools for creating websites. During my university years, I additionally worked as a Teaching Assistant for the courses I excelled at, and was a Research Assistant for the confidential-fair-exchange project.',
-
-  
-}
+  welcome: "Welcome.",
+  lang_switch: "lv",
+  my_name: "My name is Dāvis Kažemaks",
+  this_is: "And this is my website",
+  about: "About me",
+  projects: "Projects",
+  check: "Check out",
+  personal: "Personal information",
+  personal_text:
+    "My name is Dāvis Kažemaks. I am from Latvia but currently residing in Delft, Netherlands. I have always enjoyed tinkering with computers and making projects that solve a problem or improve experience for me and people around me.",
+  edu: "Education",
+  edu_text:
+    "I am currently pursuing a master's in Computer and Embedded Systems Engineering at Delft University of Technology. At TU Delft, I also obtained my Bachelor in Computer Science and graduated with Honors and Cum Laude. During my studies, I learned software engineering principles, testing, databases and too many programming languages.",
+  exp: "Experience",
+  exp_text:
+    "I received an internship as a Full Stack Developer in Emergn which was provided by the SpaceTEM program. I spent my days learning and using Javascript, CSS, React, Nodejs, Git, and many other tools for creating websites. During my university years, I additionally worked as a Teaching Assistant for the courses I excelled at, and was a Research Assistant for the confidential-fair-exchange project.",
+};

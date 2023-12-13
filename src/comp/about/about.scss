@@ -1,6 +1,6 @@
 .about-container {
   padding-top: 80px;
-  width:80%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -8,22 +8,22 @@
   min-height: 850px;
 }
 .img-container {
-  width:30%;
+  width: 30%;
   display: flex;
   align-items: center;
 
   .personal-image {
-    width:10em;
-    height:10em;
+    width: 10em;
+    height: 10em;
     object-fit: cover;
-    border-radius:200px;
-    margin:2em;
+    border-radius: 200px;
+    margin: 2em;
   }
 }
 
 .about-headline {
-  margin-top:0.5em;
-  margin-bottom:1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 .about-grid-headline {
@@ -39,10 +39,10 @@
 
 .grid-item {
   border-radius: 11px;
-  margin:1em;
+  margin: 1em;
 }
 
-.grid-item-personal{
+.grid-item-personal {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -52,12 +52,12 @@ grid-item-education {
 }
 
 .about-grid-text {
-  margin:2em;
+  margin: 2em;
   font-size: 1.2rem;
 }
 
 .edu-headline {
-  margin-left:33%;
+  margin-left: 33%;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -66,14 +66,13 @@ grid-item-education {
     flex-direction: column;
   }
   .edu-headline {
-    margin-left:20%;
+    margin-left: 20%;
   }
 }
 
 @media only screen and (max-width: 770px) {
-  
-  .grid-item-personal{
-    display:flex;
+  .grid-item-personal {
+    display: flex;
     flex-direction: column-reverse;
   }
 
@@ -86,50 +85,50 @@ grid-item-education {
   .img-container {
     margin: 0 auto;
     width: fit-content;
-  
+
     .personal-image {
-      width:15em;
-      height:15em;
+      width: 15em;
+      height: 15em;
       object-fit: cover;
-      border-radius:200px;
+      border-radius: 200px;
       margin: 0;
       margin-bottom: 1em;
     }
   }
 }
 
-@media only screen and (max-width: 500px  ) { 
- .personal-headline {
-  font-size:1.75rem;
- }
+@media only screen and (max-width: 500px) {
+  .personal-headline {
+    font-size: 1.75rem;
+  }
 }
 
-@media only screen and (max-width: 456px  ) { 
+@media only screen and (max-width: 456px) {
   .about-grid-text {
-    font-size:1rem;
+    font-size: 1rem;
   }
   .about-container {
-    width:90%;
+    width: 90%;
   }
 
   .about-grid-headline {
-    font-size:1.7rem;
+    font-size: 1.7rem;
   }
 
   .img-container {
     .personal-image {
-      width:10em;
-      height:10em;
+      width: 10em;
+      height: 10em;
       object-fit: cover;
-      border-radius:200px;
+      border-radius: 200px;
       margin: 0;
       margin-bottom: 1em;
     }
   }
 }
 
-@media only screen and (max-width: 375px  ) { 
+@media only screen and (max-width: 375px) {
   .personal-headline {
-    width:min-content;
-   }
+    width: min-content;
+  }
 }
