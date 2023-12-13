@@ -23,14 +23,14 @@
 .intro-text-1 {
   animation: fade-in 1s ease;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .intro-text-2 {
 
   animation: fade-in 1s ease;
   animation-fill-mode: forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
 }
 
 
@@ -51,13 +51,13 @@
 .go-about {
   animation: fly-in-bot 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 
 .go-projects {
   animation: fly-in-right 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 7.5s;
+  animation-delay: 4s;
 }
 
 .img-button {
@@ -67,7 +67,7 @@
 
   animation: fade-in-rotate 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 5.5s;
 }
 
 .restart-button {
@@ -101,7 +101,6 @@
 
   animation: typing 1.4s steps(8, end), blink-caret .95s step-end infinite;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
 }
 
 /********************* Animations  **********************/

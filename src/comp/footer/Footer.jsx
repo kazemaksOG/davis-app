@@ -8,6 +8,9 @@ import blackGit from '../../assets/black_github.png';
 import whiteFacebook from '../../assets/white_facebook.png';
 import blackFacebook from '../../assets/black_facebook.png';
 
+import whiteLinkedin from '../../assets/white_linked.svg'
+import blackLinkedin from '../../assets/black_linked.svg'
+
 
 function Footer(props) {
   return (
@@ -23,7 +26,7 @@ const renderIcons = (props) => {
   return(
     mappingInfo.map((item) => (
       <a key={item.id} className="link-git" rel="noopener noreferrer" target="_blank" href={item.link}>
-        <img className="git-img" src={props.theme == "dark" ? item.white : item.black} alt="default" />
+        <img className="git-img" src={props.theme === "dark" ? item.white : item.black} alt="default" />
       </a>
     ))
   )
@@ -41,6 +44,12 @@ const mappingInfo = [
     white: whiteFacebook,
     black: blackFacebook,
     link: 'https://www.facebook.com/davis.kazemaks',
+  },
+  {
+    id: "linkedin",
+    white: whiteLinkedin,
+    black: blackLinkedin,
+    link: 'https://www.linkedin.com/in/dāvis-kažemaks-386646196',
   }
 ];
   

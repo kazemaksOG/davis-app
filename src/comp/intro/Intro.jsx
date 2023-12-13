@@ -25,11 +25,11 @@ function Intro(props) {
       return (
         <React.Fragment>
           <div className="restart-button">
-            <img className="img-button" src={props.theme === "dark" ? dark_theme_replay : light_theme_replay} onClick={() => restart()} />
+            <img className="img-button" src={props.theme === "dark" ? dark_theme_replay : light_theme_replay} onClick={() => restart()} alt="restart" />
           </div>
 
           <div className="type-writer">
-            {props.lang.welcome == "Welcome." ? "" : <Spacer amount={1} />}{props.lang.welcome}
+            {props.lang.welcome === "Welcome." ? "" : <Spacer amount={1} />}{props.lang.welcome}
           </div>
 
           <div className="intro-text-1">

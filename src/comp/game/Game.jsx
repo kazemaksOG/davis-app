@@ -10,7 +10,7 @@ class Game extends Component {
   render() {
     return (
       <div className="mrg-top-70">
-        <iframe width="95%" height="750px" frameBorder="0" src="https://jsgame-e56ba.web.app/" >
+        <iframe title="unique" width="95%" height="750px" frameBorder="0" src="https://jsgame-e56ba.web.app/" >
           Browser or device not compatible (try google chrome)
         </iframe>
 

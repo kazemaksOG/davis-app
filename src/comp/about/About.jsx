@@ -53,6 +53,9 @@ function About(props) {
           </div>
         </div>
       </div>
+            <a href="#projects" className="default-button center-box mrg-top-10">
+              {props.lang.projects}
+            </a>
     </div>
   );
 }
